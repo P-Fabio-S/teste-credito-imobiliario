@@ -13,7 +13,7 @@
 
 ### Passos
 
-1. Acessar a URL:[Negócios Imobiliários](https://www.negociosimobiliarios.santander.com.br/negociosimobiliarios/#/home) de simulação de crédito imobiliário do Santander
+1. Acessar a URL: [Negócios Imobiliários](https://www.negociosimobiliarios.santander.com.br/negociosimobiliarios/#/home) de simulação de crédito imobiliário do Santander
 2. Informar Nome Completo
 3. Informar CPF válido
 4. Informar Data de Nascimento
@@ -33,7 +33,9 @@
 
 ### Evidência
 
-📸 *Imagem 01: [Tela de Dados Pessoais preenchida](Imagem-01-2026-01-16)
+### Evidência
+
+🖼️ *Imagem 01:* [Tela de Dados Pessoais preenchida](../evidencias/Imagem-01-2026-01-16.png)
 
 ### Observações / Bugs
 
@@ -71,8 +73,9 @@ Nenhum bug identificado nesta etapa.
 
 ### Evidência
 
-📸 *Imagem 02 – Confirmação de SMS*
-📸 *Imagem 03 – Código validado com sucesso*
+*Imagem 02:* [Confirmação de SMS](../evidencias/Imagem-02-2026-01-16.png)
+
+*Imagem 03:* [Código validado com sucesso](../evidencias/Imagem-03-2026-01-16.png)
 
 ### Observações / Bugs
 
@@ -113,7 +116,7 @@ Nenhum bug identificado.
 
 ### Evidência
 
-📸 *Imagem 04 – Tela de Dados da Proposta*
+*Imagem 04:* [Tela de Dados da Proposta](../evidencias/Imagem-04-2026-01-16.png)
 
 ### Observações / Bugs
 
@@ -153,7 +156,7 @@ Nenhum bug identificado.
 
 ### Evidência
 
-📸 *Imagem 05 – Resultado da Simulação*
+*Imagem 05:* [Resultado da Simulação](../evidencias/Imagem-05-2026-01-16.png)
 
 ### Observações / Bugs
 
@@ -165,7 +168,7 @@ Nenhum bug funcional identificado.
 
 | Cenário                 | Resultado                   | Evidências
 | ----------------------- | --------------------------- | ---------------------------|
-| Campo obrigatório vazio | Sistema bloqueia avanço     | Campo-obrigatorio-vazio.png    |
+| Campo obrigatório vazio | Sistema bloqueia avanço     | Obriga-vazio1.png, Obriga-vazio1.png   |
 | CPF inválido            | Sistema impede continuidade | CPF-invalido.png               |
 | Token incorreto         | Sistema não valida          | Token-incorreto.png            |
 | CAPTCHA não resolvido   | Simulação não executa       | CAPTCHA-nao-resolvido.png      |
