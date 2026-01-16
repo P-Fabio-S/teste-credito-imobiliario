@@ -239,17 +239,18 @@ Prioridade: Alta
 
 ## Resultado Obtido
 
-✅ Valor do financiamento exibido corretamente: R$ 60.000,00
-✅ Prazo exibido corretamente: 420 meses
-✅ Valor da 1ª parcela exibido corretamente: R$ 820,20
-✅ Taxa efetiva exibida corretamente: 13,29% a.a / 1,05% a.m + TR
-✅ CET exibido corretamente: 15,30% a.a
-✅ Seguro habitacional (CESH) exibido corretamente
-✅ Botão “Continue para analisar o crédito” exibido e funcional
+✅ Valor do financiamento exibido corretamente: R$ 60.000,00.
+✅ Prazo exibido corretamente: 420 meses.
+✅ Valor da 1ª parcela exibido corretamente: R$ 820,20.
+✅ Taxa efetiva exibida corretamente: 13,29% a.a / 1,05% a.m + TR.
+✅ CET exibido corretamente: 15,30% a.a.
+✅ Seguro habitacional (CESH) exibido corretamente.
+✅ Botão “Continue para analisar o crédito” exibido e funcional.
 
 ## Evidência
 
 *Imagem 08:* [Tela de Dados da Proposta](../evidencias/Imagem-08-2026-01-16.png)
+*Imagem 09:* [Tela de Dados da Proposta](../evidencias/Imagem-09-2026-01-16.png)
 
 ## Observações / Bugs
 
@@ -291,7 +292,7 @@ Prioridade: Alta
 
 ### Evidência
 
-*Imagem 09:* [Resultado da Simulação](../evidencias/Imagem-09-2026-01-16.png)
+*Imagem 10:* [Resultado da Simulação](../evidencias/Imagem-10-2026-01-16.png)
 
 ### Observações / Bugs
 
@@ -344,7 +345,7 @@ Resultado Obtido
 
 Evidência
 
-*Imagem 09:* [Resultado da Simulação](../evidencias/Imagem-09-2026-01-16.png)
+*Imagem 11:* [Resultado da Simulação](../evidencias/Imagem-11-2026-01-16.png)
 
 Observações / Bugs
 
