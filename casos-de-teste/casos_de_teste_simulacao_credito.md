@@ -1,29 +1,184 @@
-# 📘 Casos de Teste – Simulação de Crédito Imobiliário | Santander
+## 🧪 Caso de Teste 01 – Início da Simulação (Dados Pessoais)
 
-| ID    | Caso de Teste                                | Pré-condições                             | Passos                                                                                                                     | Resultado Esperado                              | Resultado Obtido                          | Evidências                              | Status                     |
-| ----- | -------------------------------------------- | ----------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- | ----------------------------------------- | --------------------------------------- | -------------------------- |
-| CT-01 | Acesso ao simulador de crédito imobiliário   | Usuário com acesso à internet e navegador | 1. Acessar o site do Santander: [Negócios Imobiliários](https://www.negociosimobiliarios.santander.com.br/negociosimobiliarios/#/home)<br>2. Clicar em "Simule e Contrate"<br>                 | Página do simulador exibida corretamente        | Página exibida conforme esperado          | `evidencia_01_inicio_simulacao.png`     | ✅ Aprovado                 |
-| CT-02 | Simulação com dados válidos                  | Acesso ao simulador                       | 1. Informar valor válido do imóvel<br>2. Informar valor de entrada válido<br>3. Selecionar prazo<br>4. Confirmar simulação | Exibição de parcelas, prazo e taxa de juros     | Valores exibidos corretamente             | `evidencia_02_preenchimento_dados.png`  | ✅ Aprovado                 |
-| CT-03 | Validação de campos obrigatórios             | Acesso ao simulador                       | 1. Não preencher campos obrigatórios<br>2. Tentar avançar                                                                  | Exibição de mensagens solicitando preenchimento | Mensagens exibidas corretamente           | `evidencia_03_mensagem_erro_campos.png` | ✅ Aprovado                 |
-| CT-04 | Valor de entrada maior que o valor do imóvel | Acesso ao simulador                       | 1. Informar valor do imóvel<br>2. Informar entrada maior que o valor do imóvel<br>3. Tentar simular                        | Bloquear simulação e exibir mensagem clara      | Simulação bloqueada com mensagem genérica | `evidencia_04_entrada_maior.png`        | ⚠️ Aprovado com observação |
-| CT-05 | Simulação sem informar valor de entrada      | Acesso ao simulador                       | 1. Informar valor do imóvel<br>2. Deixar entrada em branco<br>3. Confirmar simulação                                       | Permitir simulação ou aplicar valor mínimo      | Simulação realizada com sucesso           | `evidencia_05_entrada_vazia.png`        | ✅ Aprovado                 |
-| CT-06 | Seleção do prazo máximo de financiamento     | Acesso ao simulador                       | 1. Informar dados válidos<br>2. Selecionar maior prazo disponível<br>3. Simular                                            | Simulação realizada sem erros                   | Simulação realizada corretamente          | `evidencia_06_prazo_maximo.png`         | ✅ Aprovado                 |
+**ID:** CT-IMOBS-001
+**Título:** Preenchimento correto dos dados pessoais para iniciar simulação
+**Tipo:** Funcional
+**Prioridade:** Alta
+
+### Pré-condições
+
+* Usuário com CPF válido
+* Acesso à internet
+* Navegador compatível
+
+### Passos
+
+1. Acessar a URL:[Negócios Imobiliários](https://www.negociosimobiliarios.santander.com.br/negociosimobiliarios/#/home) de simulação de crédito imobiliário do Santander
+2. Informar Nome Completo
+3. Informar CPF válido
+4. Informar Data de Nascimento
+5. Informar E-mail válido
+6. Informar Número de Celular válido
+7. Informar Renda Mensal
+8. Clicar no botão **“Próximo”**
+
+### Resultado Esperado
+
+* Sistema deve aceitar os dados preenchidos
+* Usuário deve ser direcionado para a etapa de confirmação via SMS
+
+### Resultado Obtido
+
+✅ Conforme esperado
+
+### Evidência
+
+📸 *Imagem 01 – Tela de Dados Pessoais preenchida*
+
+### Observações / Bugs
+
+Nenhum bug identificado nesta etapa.
 
 ---
 
-### 🔹 Observações
+## 🧪 Caso de Teste 02 – Confirmação de Token SMS
 
-* Coloque **o nome exato do arquivo de evidência** que está na pasta `/evidencias/` do repositório.
-* Se quiser, você pode até usar links no GitHub:
+**ID:** CT-IMOBS-002
+**Título:** Validação de código SMS para autenticação do usuário
+**Tipo:** Funcional / Segurança
+**Prioridade:** Alta
 
-```md
-[Evidência](../evidencias/evidencia_01_inicio_simulacao.png)
-```
+### Pré-condições
 
-Assim fica clicável direto no README do GitHub.
+* Celular informado corretamente
+* Recebimento do SMS
+
+### Passos
+
+1. Aguardar recebimento do código SMS
+2. Informar o código recebido no campo indicado
+3. Clicar em **“Confirmar Código Token”**
+
+### Resultado Esperado
+
+* Sistema deve validar o código
+* Usuário deve avançar para a etapa de Dados da Proposta
+
+### Resultado Obtido
+
+✅ Código validado com sucesso
+✅ Avanço de etapa realizado corretamente
+
+### Evidência
+
+📸 *Imagem 02 – Confirmação de SMS*
+📸 *Imagem 03 – Código validado com sucesso*
+
+### Observações / Bugs
+
+Nenhum bug identificado.
 
 ---
 
-Se você quiser, posso **refazer toda a tabela final com links clicáveis das evidências** para GitHub, pronta para colar e usar, sem precisar editar depois.
+## 🧪 Caso de Teste 03 – Preenchimento dos Dados da Proposta
 
-Quer que eu faça isso?
+**ID:** CT-IMOBS-003
+**Título:** Preenchimento dos dados do imóvel para simulação
+**Tipo:** Funcional
+**Prioridade:** Alta
+
+### Pré-condições
+
+* Usuário autenticado via SMS
+
+### Passos
+
+1. Selecionar objetivo **“Empréstimo – Usecasa”**
+2. Selecionar tipo de imóvel **Residencial – Casa**
+3. Informar valor do imóvel (R$ 400.000,00)
+4. Informar valor a financiar (R$ 40.000,00)
+5. Informar prazo de financiamento (20 anos)
+6. Selecionar opção de financiamento de IOF
+7. Resolver o CAPTCHA
+8. Clicar em **“Simular”**
+
+### Resultado Esperado
+
+* Sistema deve aceitar os dados informados
+* Simulação deve ser processada com sucesso
+
+### Resultado Obtido
+
+✅ Simulação processada corretamente
+
+### Evidência
+
+📸 *Imagem 04 – Tela de Dados da Proposta*
+
+### Observações / Bugs
+
+Nenhum bug identificado.
+
+---
+
+## 🧪 Caso de Teste 04 – Visualização do Resultado da Simulação
+
+**ID:** CT-IMOBS-004
+**Título:** Exibição correta dos valores da simulação de crédito
+**Tipo:** Funcional / Regressão
+**Prioridade:** Alta
+
+### Pré-condições
+
+* Simulação concluída com sucesso
+
+### Passos
+
+1. Visualizar valor do empréstimo
+2. Verificar prazo total em meses
+3. Validar valor da parcela inicial
+4. Conferir taxa de juros e CET
+5. Verificar botão de continuidade da análise de crédito
+
+### Resultado Esperado
+
+* Todos os valores devem ser exibidos claramente
+* Taxas e parcelas devem estar coerentes com os dados informados
+
+### Resultado Obtido
+
+✅ Valores exibidos corretamente
+✅ Taxa efetiva: 21,70% a.a
+✅ Parcela inicial exibida corretamente
+
+### Evidência
+
+📸 *Imagem 05 – Resultado da Simulação*
+
+### Observações / Bugs
+
+Nenhum bug funcional identificado.
+
+---
+
+## 🐞 Testes Negativos Executados (Resumo)
+
+| Cenário                 | Resultado                   | Evidências
+| ----------------------- | --------------------------- | ---------------------------|
+| Campo obrigatório vazio | Sistema bloqueia avanço     | Campo-obrigatorio-vazio.png    |
+| CPF inválido            | Sistema impede continuidade | CPF-invalido.png               |
+| Token incorreto         | Sistema não valida          | Token-incorreto.png            |
+| CAPTCHA não resolvido   | Simulação não executa       | CAPTCHA-nao-resolvido.png      |
+
+
+✅ Comportamentos esperados atendidos.
+
+---
+
+## ✅ Conclusão Geral dos Testes
+
+* A jornada de simulação de crédito imobiliário do Santander apresentou **estabilidade**
+* Não foram identificados bugs críticos ou bloqueantes
+* Fluxo bem estruturado e intuitivo
+* Validações obrigatórias funcionando corretamente
+* Processo atende aos requisitos funcionais esperados
