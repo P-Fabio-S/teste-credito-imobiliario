@@ -1,8 +1,7 @@
-# Testes BDD– Simulação de Crédito Imobiliário | Santander
+# Testes BDD– Simulação de Crédito Imobiliário |
 
 #  Objetivo
-Este projeto tem como objetivo realizar testes manuais na jornada de **simulação de crédito imobiliário do Banco Santander**, utilizando o padrão **BDD (Behavior Driven Development)** para descrever os cenários de teste de forma clara e orientada ao comportamento do usuário.
-
+Este projeto tem como objetivo realizar testes manuais na jornada de **simulação de crédito imobiliário do Banco Santander**.
 ---
 
 #  Banco Testado
@@ -11,6 +10,9 @@ Este projeto tem como objetivo realizar testes manuais na jornada de **simulaç�
 # Jornada Testada
 Simulação de Crédito Imobiliário (Pessoa Física)
 
+---
+# Tipo de Teste 
+- Teste Manual – Jornada E2E
 ---
 
 # Escopo dos Testes
@@ -25,9 +27,6 @@ Simulação de Crédito Imobiliário (Pessoa Física)
 # Ambiente de Teste
 - Canal: Website Santander  
 - Dispositivo: Desktop  
-- Sistema Operacional: Windows  
+- Sistema Operacional: Windows 11
 - Navegador: Google Chrome  
 
----
-
-## 📂 Estrutura do Projeto
