@@ -1,4 +1,4 @@
-## 🧪 Caso de Teste 01 – Início da Simulação (Dados Pessoais)
+##  Caso de Teste 01 – Início da Simulação (Dados Pessoais)
 
 **ID:** CT-IMOBS-001
 **Título:** Preenchimento correto dos dados pessoais para iniciar simulação
@@ -33,8 +33,6 @@
 
 ### Evidência
 
-### Evidência
-
 🖼️ *Imagem 01:* [Tela de Dados Pessoais preenchida](../evidencias/Imagem-01-2026-01-16.png)
 
 ### Observações / Bugs
@@ -43,7 +41,7 @@ Nenhum bug identificado nesta etapa.
 
 ---
 
-## 🧪 Caso de Teste 02 – Confirmação de Token SMS
+##  Caso de Teste 02 – Confirmação de Token SMS
 
 **ID:** CT-IMOBS-002
 **Título:** Validação de código SMS para autenticação do usuário
@@ -83,7 +81,7 @@ Nenhum bug identificado.
 
 ---
 
-## 🧪 Caso de Teste 03 – Preenchimento dos Dados da Proposta
+## 🧪 Caso de Teste 03 – Preenchimento dos Dados da Proposta (Empréstimo – Usecasa)
 
 **ID:** CT-IMOBS-003
 **Título:** Preenchimento dos dados do imóvel para simulação
@@ -158,20 +156,208 @@ Nenhum bug identificado.
 
 *Imagem 05:* [Resultado da Simulação](../evidencias/Imagem-05-2026-01-16.png)
 
+*Imagem 06:* [Resultado da Simulação](../evidencias/Imagem-06-2026-01-16.png) ++++
+
 ### Observações / Bugs
 
 Nenhum bug funcional identificado.
 
 ---
+## Caso de Teste 05 – Preenchimento dos Dados da Proposta (Financiamento do Imovel)
+
+**ID:** CT-IMOBS-005
+**Título:** Preenchimento dos dados do imóvel para simulação
+**Tipo:** Funcional
+**Prioridade:** Alta
+
+### Pré-condições
+
+* Usuário autenticado via SMS
+
+### Passos
+
+1. Selecionar objetivo **“Financiamento do Imovel – ”**
+2. Selecionar tipo de imóvel **Residencial – Apartamento**
+3. Informar valor do imóvel (R$ 300.000,00)
+4. Informar valor mínimo a financiar (R$ 60.000,00)
+5. Informar prazo de financiamento máximo (35 anos)
+6. Em "Deseja financiar as despesas de ITBI e Registro do imóvel? (5% do valor do Imóvel)" selecione a opção "não".
+7. Resolver o CAPTCHA
+8. Clicar em **“Simular”**
+
+### Resultado Esperado
+
+* Sistema deve aceitar os dados informados
+* Simulação deve ser processada com sucesso
+
+### Resultado Obtido
+
+✅ Simulação processada corretamente
+
+### Evidência
+
+*Imagem 07:* [Tela de Dados da Proposta](../evidencias/Imagem-07-2026-01-16.png)
+
+### Observações / Bugs
+
+Nenhum bug identificado.
+
+---
+
+## Caso de Teste 6 – Visualização do Resultado da Simulação (Financiamento de Imóvel)
+
+ID: CT-IMOBS-06
+Título: Exibição correta dos valores do resultado da simulação de financiamento imobiliário
+Tipo: Funcional / Regressão
+Prioridade: Alta
+
+## Pré-condições
+
+* Usuário autenticado via SMS
+* Simulação de financiamento imobiliário concluída com sucesso
+
+### Passos
+
+1. Visualizar o valor do financiamento
+2. Verificar o prazo total do financiamento em meses
+3. Conferir o valor da entrada
+4. Validar o valor da 1ª parcela
+5. Conferir a taxa de juros efetiva
+6. Verificar o Custo Efetivo Total (CET)
+7. Verificar a exibição do seguro habitacional (CESH)
+8. Validar a presença do botão “Continue para analisar o crédito”
+
+## Resultado Esperado
+
+* Todos os valores devem ser exibidos de forma clara e legível
+* Valor do financiamento deve ser R$ 60.000,00
+* Prazo deve ser exibido como 35 anos (420 meses)
+* Valor da entrada deve ser exibido corretamente
+* Valor da parcela inicial deve estar coerente com os dados simulados
+* Taxa de juros efetiva, CET e seguro habitacional devem estar visíveis
+* Botão para continuidade da análise de crédito deve estar disponível
+
+## Resultado Obtido
+
+✅ Valor do financiamento exibido corretamente: R$ 60.000,00
+✅ Prazo exibido corretamente: 420 meses
+✅ Valor da 1ª parcela exibido corretamente: R$ 820,20
+✅ Taxa efetiva exibida corretamente: 13,29% a.a / 1,05% a.m + TR
+✅ CET exibido corretamente: 15,30% a.a
+✅ Seguro habitacional (CESH) exibido corretamente
+✅ Botão “Continue para analisar o crédito” exibido e funcional
+
+## Evidência
+
+*Imagem 08:* [Tela de Dados da Proposta](../evidencias/Imagem-08-2026-01-16.png)
+
+## Observações / Bugs
+
+* Nenhum bug funcional identificado.
+
+
+## Caso de Teste 07 – Preenchimento dos Dados da Proposta (Portabilidade de Crédito Imobiliário)
+
+**ID:** CT-IMOBS-007
+**Título:** Preenchimento dos dados do imóvel para simulação de portabilidade
+**Tipo:** Funcional
+**Prioridade:** Alta
+
+### Pré-condições
+
+* Usuário autenticado via SMS
+
+### Passos
+
+1. Selecionar objetivo **“Portabilidade”**
+2. Selecionar opção **“Portabilidade de Crédito Imobiliário”**
+3. Selecionar tipo de imóvel **Residencial – Casa**
+4. Selecionar localização do imóvel **SP**
+5. Informar valor do imóvel (**R$ 200.000,00**)
+6. Informar valor máximo financiar (**R$ 158.796,41**)
+7. Informar prazo do financiamento mínimo (**1 ano**)
+8. Resolver o **CAPTCHA**
+9. Clicar em **“Simular”**
+
+### Resultado Esperado
+
+* Sistema deve aceitar todos os dados informados
+* Valores devem respeitar os limites mínimo e máximo definidos
+* Simulação de portabilidade deve ser processada com sucesso
+
+### Resultado Obtido
+
+✅ Simulação processada corretamente
+
+### Evidência
+
+*Imagem 09:* [Resultado da Simulação](../evidencias/Imagem-09-2026-01-16.png)
+
+### Observações / Bugs
+
+Nenhum bug identificado.
+
+---
+
+## Caso de Teste 8 – Visualização do Resultado da Simulação (Portabilidade)
+
+**ID:** CT-IMOBS-08
+**Título:** Exibição correta dos valores do resultado da simulação de portabilidade de crédito imobiliário
+**Tipo:** Funcional / Regressão
+**Prioridade:** Alta
+
+### Pré-condições
+
+* Usuário autenticado via SMS
+* Simulação de portabilidade de crédito imobiliário concluída com sucesso
+
+### Passos
+
+1. Visualizar o valor do financiamento
+2. Verificar o prazo total do financiamento em meses
+3. Conferir o valor total do financiamento
+4. Validar o valor da 1ª parcela
+5. Conferir a taxa de juros efetiva (a.a e a.m + TR)
+6. Verificar a exibição do valor das despesas financiadas
+7. Validar a presença do botão “Continue para analisar o crédito”
+8. Verificar a seção de personalização das condições (segmento, seguradora, ofertas, tipo de parcelas e campanha)
+
+### Resultado Obtido
+
+
+* Todos os valores devem ser exibidos de forma clara e legível
+* Valor do financiamento deve ser R$ 158.796,41
+* Prazo deve ser exibido como 1 ano (12 meses)
+* Valor total do financiamento deve corresponder ao valor financiado
+* Valor da 1ª parcela deve ser exibido corretamente
+* Taxa de juros efetiva deve ser apresentada em % a.a e % a.m + TR
+* Botão para continuidade da análise de crédito deve estar habilitado
+* Opções de personalização devem estar visíveis para o usuário
+
+Resultado Obtido
+
+✅ Valor do financiamento exibido corretamente: R$ 158.796,41
+✅ Prazo exibido corretamente: 12 meses
+✅ Valor da 1ª parcela exibido corretamente: R$ 14.952,62
+✅ Taxa efetiva exibida corretamente: 13,29% a.a / 1,05% a.m + TR
+✅ Botão “Continue para analisar o crédito” exibido e funcional
+
+Evidência
+
+*Imagem 09:* [Resultado da Simulação](../evidencias/Imagem-09-2026-01-16.png)
+
+Observações / Bugs
+
+Nenhum bug funcional identificado.
 
 ## 🐞 Testes Negativos Executados (Resumo)
 
-| Cenário                 | Resultado                   | Evidências
-| ----------------------- | --------------------------- | ---------------------------|
-| Campo obrigatório vazio | Sistema bloqueia avanço     | Obriga-vazio1.png, Obriga-vazio1.png   |
-| CPF inválido            | Sistema impede continuidade | CPF-invalido.png               |
-| Token incorreto         | Sistema não valida          | Token-incorreto.png            |
-| CAPTCHA não resolvido   | Simulação não executa       | CAPTCHA-nao-resolvido.png      |
+| Cenário                   | Resultado                   | Evidências
+| ------------------------- | --------------------------- | ---------------------------|
+| Campo obrigatório vazio   | Sistema bloqueia avanço     | [Campo-obrigatório.png](../evidencias/Campo-obrigatorio.png)                   |
+| CPF inválido              | Sistema impede continuidade | [CPF-invalido.png](../evidencias/CPF-invalido.png)                             |
+| Token incorreto           | Sistema não valida          | [Token-incorreto.mp4](../evidencias/token-incorreto.mp4)                       |
+| RECAPTCHA não resolvido   | Simulação não executa       | [RECAPTCHA-nao-resolvido.mp4](../evidencias/RECAPTCHA-nao-resolvido.mp4)       |
 
 
 ✅ Comportamentos esperados atendidos.
