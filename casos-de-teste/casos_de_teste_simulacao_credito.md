@@ -1,8 +1,11 @@
 ##  Caso de Teste 01 – Início da Simulação (Dados Pessoais)
 
 **ID:** CT-IMOBS-001
+
 **Título:** Preenchimento correto dos dados pessoais para iniciar simulação
+
 **Tipo:** Funcional
+
 **Prioridade:** Alta
 
 ### Pré-condições
@@ -44,8 +47,11 @@ Nenhum bug identificado nesta etapa.
 ##  Caso de Teste 02 – Confirmação de Token SMS
 
 **ID:** CT-IMOBS-002
+
 **Título:** Validação de código SMS para autenticação do usuário
+
 **Tipo:** Funcional / Segurança
+
 **Prioridade:** Alta
 
 ### Pré-condições
@@ -81,11 +87,14 @@ Nenhum bug identificado.
 
 ---
 
-## 🧪 Caso de Teste 03 – Preenchimento dos Dados da Proposta (Empréstimo – Usecasa)
+##  Caso de Teste 03 – Preenchimento dos Dados da Proposta (Empréstimo – Usecasa)
 
 **ID:** CT-IMOBS-003
+
 **Título:** Preenchimento dos dados do imóvel para simulação
+
 **Tipo:** Funcional
+
 **Prioridade:** Alta
 
 ### Pré-condições
@@ -122,11 +131,14 @@ Nenhum bug identificado.
 
 ---
 
-## 🧪 Caso de Teste 04 – Visualização do Resultado da Simulação
+##  Caso de Teste 04 – Visualização do Resultado da Simulação
 
 **ID:** CT-IMOBS-004
+
 **Título:** Exibição correta dos valores da simulação de crédito
+
 **Tipo:** Funcional / Regressão
+
 **Prioridade:** Alta
 
 ### Pré-condições
@@ -166,8 +178,11 @@ Nenhum bug funcional identificado.
 ## Caso de Teste 05 – Preenchimento dos Dados da Proposta (Financiamento do Imovel)
 
 **ID:** CT-IMOBS-005
+
 **Título:** Preenchimento dos dados do imóvel para simulação
+
 **Tipo:** Funcional
+
 **Prioridade:** Alta
 
 ### Pré-condições
@@ -260,8 +275,11 @@ Prioridade: Alta
 ## Caso de Teste 07 – Preenchimento dos Dados da Proposta (Portabilidade de Crédito Imobiliário)
 
 **ID:** CT-IMOBS-007
+
 **Título:** Preenchimento dos dados do imóvel para simulação de portabilidade
+
 **Tipo:** Funcional
+
 **Prioridade:** Alta
 
 ### Pré-condições
@@ -303,8 +321,11 @@ Nenhum bug identificado.
 ## Caso de Teste 8 – Visualização do Resultado da Simulação (Portabilidade)
 
 **ID:** CT-IMOBS-08
+
 **Título:** Exibição correta dos valores do resultado da simulação de portabilidade de crédito imobiliário
+
 **Tipo:** Funcional / Regressão
+
 **Prioridade:** Alta
 
 ### Pré-condições
