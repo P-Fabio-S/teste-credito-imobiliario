@@ -255,16 +255,23 @@ Prioridade: Alta
 ## Resultado Obtido
 
 ✅ Valor do financiamento exibido corretamente: R$ 60.000,00.
+
 ✅ Prazo exibido corretamente: 420 meses.
+
 ✅ Valor da 1ª parcela exibido corretamente: R$ 820,20.
+
 ✅ Taxa efetiva exibida corretamente: 13,29% a.a / 1,05% a.m + TR.
+
 ✅ CET exibido corretamente: 15,30% a.a.
+
 ✅ Seguro habitacional (CESH) exibido corretamente.
+
 ✅ Botão “Continue para analisar o crédito” exibido e funcional.
 
 ## Evidência
 
 *Imagem 08:* [Tela de Dados da Proposta](../evidencias/Imagem-08-2026-01-16.png)
+
 *Imagem 09:* [Tela de Dados da Proposta](../evidencias/Imagem-09-2026-01-16.png)
 
 ## Observações / Bugs
@@ -276,7 +283,7 @@ Prioridade: Alta
 
 | Cenário                   | Resultado                   | Evidências
 | ------------------------- | --------------------------- | ---------------------------|
-| Campo obrigatório vazio   | Sistema bloqueia avanço     | [Campo-obrigatório.png](../evidencias/Campo-obrigatorio.png)                   |
+| Campo obrigatório vazio   | Sistema bloqueia avanço     | [Campo-obrigatório.png](../evidencias/Campo-obrigatorio.png), [Campo-Obrigatorio1.png.](../evidencias/Campo-obrigatorio1.png)                   |
 | CPF inválido              | Sistema impede continuidade | [CPF-invalido.png](../evidencias/CPF-invalido.png)                             |
 | Token incorreto           | Sistema não valida          | [Token-incorreto.mp4](../evidencias/token-incorreto.mp4)                       |
 | RECAPTCHA não resolvido   | Simulação não executa       | [RECAPTCHA-nao-resolvido.mp4](../evidencias/RECAPTCHA-nao-resolvido.mp4)       |
