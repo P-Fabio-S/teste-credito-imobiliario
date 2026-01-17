@@ -168,7 +168,7 @@ Nenhum bug identificado.
 
 *Imagem 05:* [Resultado da Simulação](../evidencias/Imagem-05-2026-01-16.png)
 
-*Imagem 06:* [Resultado da Simulação](../evidencias/Imagem-06-2026-01-16.png) ++++
+*Imagem 06:* [Resultado da Simulação](../evidencias/Imagem-06-2026-01-16.png)
 
 ### Observações / Bugs
 
@@ -271,106 +271,6 @@ Prioridade: Alta
 
 * Nenhum bug funcional identificado.
 
-
-## Caso de Teste 07 – Preenchimento dos Dados da Proposta (Portabilidade de Crédito Imobiliário)
-
-**ID:** CT-IMOBS-007
-
-**Título:** Preenchimento dos dados do imóvel para simulação de portabilidade
-
-**Tipo:** Funcional
-
-**Prioridade:** Alta
-
-### Pré-condições
-
-* Usuário autenticado via SMS
-
-### Passos
-
-1. Selecionar objetivo **“Portabilidade”**
-2. Selecionar opção **“Portabilidade de Crédito Imobiliário”**
-3. Selecionar tipo de imóvel **Residencial – Casa**
-4. Selecionar localização do imóvel **SP**
-5. Informar valor do imóvel (**R$ 200.000,00**)
-6. Informar valor máximo financiar (**R$ 158.796,41**)
-7. Informar prazo do financiamento mínimo (**1 ano**)
-8. Resolver o **CAPTCHA**
-9. Clicar em **“Simular”**
-
-### Resultado Esperado
-
-* Sistema deve aceitar todos os dados informados
-* Valores devem respeitar os limites mínimo e máximo definidos
-* Simulação de portabilidade deve ser processada com sucesso
-
-### Resultado Obtido
-
-✅ Simulação processada corretamente
-
-### Evidência
-
-*Imagem 10:* [Resultado da Simulação](../evidencias/Imagem-10-2026-01-16.png)
-
-### Observações / Bugs
-
-Nenhum bug identificado.
-
----
-
-## Caso de Teste 8 – Visualização do Resultado da Simulação (Portabilidade)
-
-**ID:** CT-IMOBS-08
-
-**Título:** Exibição correta dos valores do resultado da simulação de portabilidade de crédito imobiliário
-
-**Tipo:** Funcional / Regressão
-
-**Prioridade:** Alta
-
-### Pré-condições
-
-* Usuário autenticado via SMS
-* Simulação de portabilidade de crédito imobiliário concluída com sucesso
-
-### Passos
-
-1. Visualizar o valor do financiamento
-2. Verificar o prazo total do financiamento em meses
-3. Conferir o valor total do financiamento
-4. Validar o valor da 1ª parcela
-5. Conferir a taxa de juros efetiva (a.a e a.m + TR)
-6. Verificar a exibição do valor das despesas financiadas
-7. Validar a presença do botão “Continue para analisar o crédito”
-8. Verificar a seção de personalização das condições (segmento, seguradora, ofertas, tipo de parcelas e campanha)
-
-### Resultado Obtido
-
-
-* Todos os valores devem ser exibidos de forma clara e legível
-* Valor do financiamento deve ser R$ 158.796,41
-* Prazo deve ser exibido como 1 ano (12 meses)
-* Valor total do financiamento deve corresponder ao valor financiado
-* Valor da 1ª parcela deve ser exibido corretamente
-* Taxa de juros efetiva deve ser apresentada em % a.a e % a.m + TR
-* Botão para continuidade da análise de crédito deve estar habilitado
-* Opções de personalização devem estar visíveis para o usuário
-
-Resultado Obtido
-
-✅ Valor do financiamento exibido corretamente: R$ 158.796,41
-✅ Prazo exibido corretamente: 12 meses
-✅ Valor da 1ª parcela exibido corretamente: R$ 14.952,62
-✅ Taxa efetiva exibida corretamente: 13,29% a.a / 1,05% a.m + TR
-✅ Botão “Continue para analisar o crédito” exibido e funcional
-
-Evidência
-
-*Imagem 11:* [Resultado da Simulação](../evidencias/Imagem-11-2026-01-16.png)
-
-Observações / Bugs
-
-Nenhum bug funcional identificado.
 
 ## 🐞 Testes Negativos Executados (Resumo)
 
