@@ -1,4 +1,4 @@
-# Testes BDD– Simulação de Crédito Imobiliário |
+# Teste - Simulação de Crédito Imobiliário 
 
 #  Objetivo
 Este projeto tem como objetivo realizar testes manuais na jornada de **simulação de crédito imobiliário do Banco Santander**.
