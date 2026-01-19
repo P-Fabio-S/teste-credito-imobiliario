@@ -168,7 +168,7 @@ Nenhum bug identificado.
 
 *Imagem 05:* [Resultado da Simulação](../evidencias/Imagem-05-2026-01-16.png)
 
-*Imagem 06:* [Resultado da Simulação](../evidencias/Imagem-06-2026-01-16.png)
+*Imagem 06:* [Botão "Continue para analisar o crédito"](../evidencias/Imagem-06-2026-01-16.png)
 
 ### Observações / Bugs
 
@@ -222,8 +222,11 @@ Nenhum bug identificado.
 ## Caso de Teste 6 – Visualização do Resultado da Simulação (Financiamento de Imóvel)
 
 ID: CT-IMOBS-06
+
 Título: Exibição correta dos valores do resultado da simulação de financiamento imobiliário
+
 Tipo: Funcional / Regressão
+
 Prioridade: Alta
 
 ## Pré-condições
@@ -272,7 +275,7 @@ Prioridade: Alta
 
 *Imagem 08:* [Tela de Dados da Proposta](../evidencias/Imagem-08-2026-01-16.png)
 
-*Imagem 09:* [Tela de Dados da Proposta](../evidencias/Imagem-09-2026-01-16.png)
+*Imagem 09:* [Botão "Continue para analisar o crédito"](../evidencias/Imagem-09-2026-01-16.png)
 
 ## Observações / Bugs
 
@@ -285,7 +288,7 @@ Prioridade: Alta
 | ------------------------- | --------------------------- | ---------------------------|
 | Campo obrigatório vazio   | Sistema bloqueia avanço     | [Campo-obrigatório.png](../evidencias/Campo-obrigatorio.png), [Campo-Obrigatorio1.png.](../evidencias/Campo-obrigatorio1.png)                   |
 | CPF inválido              | Sistema impede continuidade | [CPF-invalido.png](../evidencias/CPF-invalido.png)                             |
-| Token incorreto           | Sistema não valida          | [Token-incorreto.mp4](../evidencias/token-incorreto.mp4)                       |
+| Token incorreto           | Sistema não valida          | [Token-incorreto.mp4](../evidencias/Token-incorreto.mp4)                       |
 | RECAPTCHA não resolvido   | Simulação não executa       | [RECAPTCHA-nao-resolvido.mp4](../evidencias/RECAPTCHA-nao-resolvido.mp4)       |
 
 
