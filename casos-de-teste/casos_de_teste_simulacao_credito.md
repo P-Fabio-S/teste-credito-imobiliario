@@ -161,7 +161,9 @@ Nenhum bug identificado.
 ### Resultado Obtido
 
 ✅ Valores exibidos corretamente
+
 ✅ Taxa efetiva: 21,70% a.a
+
 ✅ Parcela inicial exibida corretamente
 
 ### Evidência
@@ -284,13 +286,12 @@ Prioridade: Alta
 
 ## 🐞 Testes Negativos Executados (Resumo)
 
-| Cenário                   | Resultado                   | Evidências
-| ------------------------- | --------------------------- | ---------------------------|
-| Campo obrigatório vazio   | Sistema bloqueia avanço     | [Campo-obrigatório.png](../evidencias/Campo-obrigatorio.png), [Campo-Obrigatorio1.png.](../evidencias/Campo-obrigatorio1.png)                   |
-| CPF inválido              | Sistema impede continuidade | [CPF-invalido.png](../evidencias/CPF-invalido.png)                             |
-| Token incorreto           | Sistema não valida          | [Token-incorreto.mp4](../evidencias/Token-incorreto.mp4)                       |
-| RECAPTCHA não resolvido   | Simulação não executa       | [RECAPTCHA-nao-resolvido.mp4](../evidencias/RECAPTCHA-nao-resolvido.mp4)       |
-
+| ID        | Cenário                 | Resultado Esperado          | Evidências                                    |
+| --------- | ----------------------- | --------------------------- | --------------------------------------------- |
+| CT-NEG-01 | Campo obrigatório vazio | Sistema bloqueia o avanço   | [Campo-obrigatório.png](../evidencias/Campo-obrigatorio.png), [Campo-Obrigatorio1.png.](../evidencias/Campo-obrigatorio1.png) |
+| CT-NEG-02 | CPF inválido            | Sistema impede continuidade | [CPF-invalido.png](../evidencias/CPF-invalido.png)                                 |
+| CT-NEG-03 | Token incorreto         | Sistema não valida          | [Token-incorreto.mp4](https://github.com/P-Fabio-S/teste-credito-imobiliario/releases/tag/CT-NEG-03)|
+| CT-NEG-04 | RECAPTCHA não resolvido | Simulação não executa       | [RECAPTCHA-nao-resolvido.mp4](https://github.com/P-Fabio-S/teste-credito-imobiliario/releases/tag/CT-NEG-04)           |
 
 ✅ Comportamentos esperados atendidos.
 
