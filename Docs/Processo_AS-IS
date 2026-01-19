@@ -1,0 +1,67 @@
+# Processo AS-IS – Simulação de Crédito Imobiliário
+
+## 1. Objetivo
+Descrever o processo atual (AS-IS) de simulação de crédito imobiliário, com base na execução de testes funcionais e negativos, evidenciando o comportamento real do sistema.
+
+---
+
+## 2. Escopo
+O processo contempla:
+- Preenchimento de dados pessoais
+- Validação de informações obrigatórias
+- Autenticação do usuário via SMS (token)
+- Preenchimento dos dados da simulação
+- Processamento e exibição do resultado da simulação
+
+Não contempla:
+- Análise de crédito
+- Aprovação ou reprovação de proposta
+- Contratação do produto
+
+---
+
+## 3. Atores Envolvidos
+- **Usuário (Cliente)**
+- **Sistema de Simulação de Crédito**
+- **Serviço de Envio de SMS**
+
+---
+
+## 4. Pré-condições
+- Acesso à internet
+- Navegador compatível
+- CPF válido
+- Número de celular ativo
+
+---
+
+## 5. Descrição do Processo AS-IS
+
+1. O usuário acessa a página de simulação de crédito imobiliário.
+2. O usuário preenche os dados pessoais obrigatórios.
+3. O sistema valida os dados informados.
+   - Em caso de dados inválidos, o processo é encerrado.
+4. O sistema envia um código de autenticação via SMS.
+5. O usuário informa o token recebido.
+6. O sistema valida o token.
+   - Em caso de token inválido, o processo é encerrado.
+7. O usuário preenche os dados da simulação (tipo de produto, imóvel e valores).
+8. O sistema valida os dados da simulação e o CAPTCHA.
+   - Em caso de erro, o processo é encerrado.
+9. O sistema processa a simulação de crédito.
+10. O sistema exibe o resultado da simulação ao usuário.
+11. O processo é finalizado com a opção de continuidade para análise de crédito.
+
+---
+
+## 6. Regras de Negócio
+- Campos obrigatórios devem ser preenchidos
+- CPF deve ser válido
+- Token SMS deve ser válido
+- CAPTCHA é obrigatório
+- Sem validação positiva, o processo não avança
+
+---
+
+## 7. Considerações Finais
+O processo AS-IS encontra-se estável e aderente aos requisitos funcionais, conforme evidenciado pelos testes executados.
