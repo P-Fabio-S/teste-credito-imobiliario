@@ -1,0 +1,46 @@
+# Processo TO-BE – Simulação de Crédito Imobiliário
+
+## 1. Objetivo
+Documentar o processo de simulação de crédito imobiliário por meio de modelagem BPMN, representando fielmente o fluxo atualmente implementado no sistema.
+
+---
+
+## 2. Escopo
+O processo TO-BE representa a formalização do processo atual (AS-IS), não caracterizando mudança funcional.
+
+---
+
+## 3. Notação Utilizada
+- BPMN 2.0
+- Eventos de início e fim
+- Tarefas de usuário e de sistema
+- Gateways exclusivos para validações
+
+---
+
+## 4. Descrição do Processo TO-BE
+
+O processo modelado em BPMN contempla as seguintes etapas:
+
+1. Evento inicial de início da simulação.
+2. Tarefa de preenchimento dos dados pessoais pelo usuário.
+3. Gateway de validação dos dados pessoais.
+4. Envio e validação do token SMS.
+5. Gateway de decisão para token válido ou inválido.
+6. Tarefa de preenchimento dos dados da simulação.
+7. Gateway de validação dos dados da simulação.
+8. Tarefa de processamento da simulação.
+9. Tarefa de exibição do resultado da simulação.
+10. Evento final de conclusão do processo.
+
+Fluxos alternativos representam encerramentos do processo em caso de dados inválidos ou falha de autenticação.
+
+---
+
+## 5. Relação AS-IS × TO-BE
+O processo TO-BE reflete integralmente o comportamento observado no processo AS-IS, conforme validado pelos testes funcionais e negativos executados.
+
+---
+
+## 6. Considerações Finais
+O TO-BE serve como documentação oficial do processo, base para rastreabilidade de testes e apoio à manutenção e evolução futura do sistema.
