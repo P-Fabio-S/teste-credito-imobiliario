@@ -1,7 +1,7 @@
 # Teste - Simulação de Crédito Imobiliário 
 
 #  Objetivo
-Este projeto tem como objetivo realizar testes manuais na jornada de **simulação de crédito imobiliário do Banco Santander**.
+Realizar testes manuais na jornada de **simulação de crédito imobiliário do Banco Santander**.
 ---
 
 #  Banco Testado
