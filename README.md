@@ -1,4 +1,4 @@
-# 🏦 Teste - Simulação de Crédito Imobiliário
+# 🏦 Simulação de Crédito Imobiliário
 
 ## Objetivo
 Realizar testes manuais na jornada de **simulação de crédito imobiliário do Banco Santander**, garantindo aderência aos requisitos funcionais.
